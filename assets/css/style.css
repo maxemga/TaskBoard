@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #75cfb8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header a {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+
+.headerWrapper {
+  margin: 0 auto;
+  width: 1500px;
+}
+
+.mainWrapper {
+  margin: 0 auto;
+  width: 1500px;
+}
+
+/* CREATE BOARD */
+.createBoard {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  clear: both;
+}
+
+.boardWrapper {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.createBoardHeading {
+  z-index: 1;
+  background-color: #bbdfc8;
+  padding: 10px 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.createBoardHeading p {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.createBoardForm {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 5;
+  width: 100%;
+  background-color: #F3F3F3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.createBoardForm label {
+  margin-top: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.createBoardForm input {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid silver;
+  border-radius: 10px;
+  height: 30px;
+  outline: none;
+}
+
+.createBoardForm form {
+  padding-top: 20px;
+}
+
+.createBoardForm.activeCreate {
+  max-height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.boardSubmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.boardSubmit button {
+  cursor: pointer;
+  background-color: #76AC5D;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+}
+
+/* */
+/* MY BOARDS */
+.myBoards {
+  margin-top: 100px;
+  position: absolute;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.myBoardsContent {
+  margin-top: 50px;
+}
+
+.myBoardsTitle p {
+  color: black;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+}
+
+.myBoardsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+  row-gap: 100px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container p {
+  padding: 50px 70px;
+  color: white;
+  background-color: #ffc478;
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+}
+
+.deleteContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.containerLine,
+.containerLine::before,
+.containerLine::after {
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  background-color: black;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.containerLine {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+.containerLine.activeClose {
+  background-color: red;
+}
+
+.containerLine::after {
+  content: '';
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  right: 0px;
+}
+
+.containerLine::before {
+  content: '';
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  right: 0px;
+}
+
+.containerLine::after.activeClose {
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.containerLine::before.activeClose {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/* */
+/*# sourceMappingURL=style.css.map */

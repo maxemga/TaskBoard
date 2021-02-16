@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TaskBoard</title>
+</head>
+<body>
+    <header>
+        <div class="headerWrapper">
+            <a href="">TRELLO</a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="mainWrapper">
+            <div class="createBoard" id="createBlock">
+                <div class="mainCreateBoard" id="createBoard">
+                    <div class="createBoardHeading" id="createBoardHeading">
+                        <p>Создать</p>                       
+                    </div>
+                    <div class="createBoardForm" id="createForm">
+                        <div class="boardWrapper">
+                            <div class="boardForm">
+                                <form action="">
+                                    <label for="name">Введите название доски</label>
+                                    <input type="text" name="name" id="createName">
+                                </form>
+                            </div>
+                            <div class="boardSubmit">
+                                <div class="boardAdd"><button id="buttonAdd">Добавить</button></div>
+                                <div class="boardSubmitClose"> <span class="boardCreateLine"></span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="myBoards" id="myBoards">
+                <div class="mainWrapper">
+                    <div class="myBoardsTitle">
+                        <p>My Boards</p>
+                    </div>
+                    <div class="myBoardsContent" id="myBoardsContent">
+                        <div class="container" id="container">
+                            <div class="deleteContainer"> <span class="containerLine" id="crosserContainer"></span> </div>
+                            <p>Test</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
